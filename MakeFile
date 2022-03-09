@@ -1,0 +1,5 @@
+start:
+	./data.bin | go run main.go
+
+executable:
+	chmod +x ./data.bin

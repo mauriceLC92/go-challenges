@@ -1,5 +1,11 @@
 start:
 	./data.bin | go run main.go
 
+start-pretty:
+	./data.bin | go run main.go | jq
+
+start-output:
+	./data.bin | go run main.go > output.txt
+
 executable:
 	chmod +x ./data.bin
